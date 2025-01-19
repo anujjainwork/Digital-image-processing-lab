@@ -24,7 +24,14 @@ In this experiment, we practiced basic image processing techniques using MATLAB:
    - Blue Channel  
 
 The output generated during this experiment is shown below:  
-![Experiment Output](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/lab1out.png?raw=true)
+![Experiment Output](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/img_rgb_to_grayscale/lab1out.png?raw=true)
+
+### - Experiment 2 (16-01-2025)  
+In this experiment, we created histogram and then equalised using MATLAB:  
+1. **First calculated cdf**
+2. ![Histogram equalisation formula](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/histogram_equilsation/histogram_equilisation_formula.svg?raw=true)
+The output generated during this experiment is shown below:  
+![Experiment Output](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/histogram_equilsation/histogram_equalization_results?raw=true)
 
 ---
 

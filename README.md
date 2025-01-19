@@ -28,10 +28,10 @@ The output generated during this experiment is shown below:
 
 ### - Experiment 2 (16-01-2025)  
 In this experiment, we created histogram and then equalised using MATLAB:  
-1. **First calculated cdf**
-2. ![Histogram equalisation formula](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/histogram_equilsation/histogram_equilisation_formula.svg?raw=true)
+Published Matlab PDF file - [View PDF](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/histogram_equilsation/histogram_eq_scratch_published.pdf)
+
 The output generated during this experiment is shown below:  
-![Experiment Output](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/histogram_equilsation/histogram_equalization_results?raw=true)
+![Experiment Output](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/histogram_equilsation/results/histogram_equalization_results.png?raw=true)
 
 ---
 

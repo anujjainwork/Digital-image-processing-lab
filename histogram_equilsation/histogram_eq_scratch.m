@@ -2,7 +2,7 @@ clc
 close all
 
 % Step 1: Load the image
-image = imread('/MATLAB Drive/LAB_2/cat.jpg');
+image = imread('/MATLAB Drive/histogram_equilsation/bmw_m5.jpg');
 if size(image, 3) == 3
     disp('image is rgb --> converting to grayscale');
     image = rgb2gray(image);
@@ -13,9 +13,9 @@ histogram = zeros(1, 256); % 256 bins for grayscale values [0-255]
 
 % Step 3: Compute histogram manually
 [rows, cols] = size(image);
-for i = 1:rows
-    for j = 1:cols
-        intensity = image(i, j);
+for ii = 1:rows
+    for jj = 1:cols
+        intensity = image(ii, jj);
         histogram(intensity + 1) = histogram(intensity + 1) + 1; % Update bin count
     end
 end
@@ -30,10 +30,10 @@ h_v = round((cdf - cdf_min) / (cdf_max - cdf_min) * 255);
 
 % Step 6: Map the pixel intensities using the normalized CDF
 equalized_image = zeros(size(image), 'uint8');
-for i = 1:rows
-    for j = 1:cols
-        intensity = image(i, j);
-        equalized_image(i, j) = h_v(intensity + 1);
+for ii = 1:rows
+    for jj = 1:cols
+        intensity = image(ii, jj);
+        equalized_image(ii, jj) = h_v(intensity + 1);
     end
 end
 
@@ -48,9 +48,18 @@ title('Original Image');
 % Histogram of Original Image
 subplot(2, 2, 2);
 bar(0:255, histogram, 'BarWidth', 1, 'FaceColor', 'b');
+hold on;
+
+% Normalize the CDF to match the histogram's scale
+normalized_cdf = cdf / max(cdf) * max(histogram);
+
+% Plot the normalized CDF
+plot(0:255, normalized_cdf, 'r', 'LineWidth', 1.5);
+hold off;
 xlabel('Pixel Intensity');
 ylabel('Frequency');
 title('Histogram of Original Image');
+
 
 % Equalized Image
 subplot(2, 2, 3);
@@ -63,3 +72,5 @@ imhist(equalized_image);
 title('Histogram of Equalized Image');
 xlabel('Pixel Intensity');
 ylabel('Frequency');
+
+saveas(gcf, 'results/histogram_equalization_results.png');

@@ -2,7 +2,7 @@ clc;
 close all;
 
 % Read the image
-I = imread('/MATLAB Drive/LAB_2/cat.jpg');
+I = imread('cat.jpg');
 
 if size(I, 3) == 3
     I = rgb2gray(I);

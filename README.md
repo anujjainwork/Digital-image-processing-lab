@@ -33,6 +33,17 @@ Published Matlab PDF file - [View PDF](https://github.com/anujjainwork/Digital-i
 The output generated during this experiment is shown below:  
 ![Experiment Output](https://github.com/anujjainwork/Digital-image-processing-lab/blob/main/histogram_equilsation/results/histogram_equalization_results.png?raw=true)
 
+### - Experiment 3 (30-01-2025)  
+In this experiment, we implemented bit planes slicing of 8 bit image using MATLAB:  
+Published Matlab PDF file - [View PDF](bitplanes_slicing/view_bitplanes.pdf)
+
+The output generated during this experiment is shown below:  
+![Experiment Output](bitplanes_slicing/BitPlaneOutputs/BitPlane_Slicing_Results.png?raw=true)
+
+### - Experiment 4 (13-21-2025)  
+In this experiment, we implemented bit planes slicing of 8 bit image using MATLAB:  
+Published Matlab PDF file - [View PDF](shanon_fano/html/shanon_fano_fn.pdf)
+
 ---
 
 ## Contributor
